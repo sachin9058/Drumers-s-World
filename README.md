@@ -59,7 +59,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/your-username/drumers-world.git
+git clone https://github.com/sachin9058/drumers-s-world.git
 Navigate to the project directory:
 
 bash
