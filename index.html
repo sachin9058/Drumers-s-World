@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drum Kit</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="background"></div>
+
+  <div class="wrapper">
+    <header class="header">
+      <p><a href="instructions.html" class="instructions-link">📖 How to Use</a></p>
+      <h1>🥁 Drumer's World</h1>
+      <p>Press the keys or click to play your beat</p>
+      <div class="dark-mode-toggle">
+        <label class="switch">
+          <input type="checkbox" id="darkToggle">
+          <span class="slider"></span>
+        </label>
+        <span class="toggle-label">Dark Mode</span>
+      </div>
+
+    </header>
+
+    <main class="drum-grid">
+      <button class="drum" data-key="a"><span class="key">A</span><span class="label">Tom 1</span></button>
+      <button class="drum" data-key="s"><span class="key">S</span><span class="label">Tom 2</span></button>
+      <button class="drum" data-key="d"><span class="key">D</span><span class="label">Tom 3</span></button>
+      <button class="drum" data-key="f"><span class="key">F</span><span class="label">Tom 4</span></button>
+      <button class="drum" data-key="j"><span class="key">J</span><span class="label">Snare</span></button>
+      <button class="drum" data-key="k"><span class="key">K</span><span class="label">Crash</span></button>
+      <button class="drum" data-key="l"><span class="key">L</span><span class="label">Kick</span></button>
+    </main>
+
+    <section class="recording">
+      <h2 style="color: white;">🎙️ Record Your Beat</h2>
+      <div class="recording-controls">
+        <button id="start-record">Start Recording</button>
+        <button id="stop-record" disabled>Stop & Download</button>
+      </div>
+      <div class="recording-status">
+        <div id="recording-timer">⏱ 00:00</div>
+        <div class="progress-container">
+          <div id="recording-progress"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <p>Made by Sachin Kumar with ❤️</p>
+    </footer>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
